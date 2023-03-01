@@ -7,6 +7,6 @@
 ```css
 :root{
     // Body Background Color
-    --theme_bg
+    --theme_bg: #fff;BodyBackgroundColor--theme_bg
 }
 ```
