@@ -5,6 +5,8 @@
 ## Usage
 
 ```css
-// Body Background Color
---theme_bg
+:root{
+    // Body Background Color
+    --theme_bg
+}
 ```
