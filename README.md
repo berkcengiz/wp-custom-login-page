@@ -1,12 +1,3 @@
-## Wix Posts to WordPress
+## WordPress Customized Login Page
 
 > I have redesigned the WordPress login screen.
-
-## Usage
-
-```css
-:root{
-    // Body Background Color
-    --theme_bg: #fff;BodyBackgroundColor--theme_bg
-}
-```
