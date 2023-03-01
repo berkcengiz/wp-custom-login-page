@@ -10,4 +10,4 @@ $ git clone https://github.com/berkcengiz/wp-custom-login-page.git
 
 ## Design View
 
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Uygulama Ekran Görüntüsü](design/login-screen.png)
