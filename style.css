@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* 
+    Custom Color Codes
+  */
+  --theme_bg: #fff;
+
+  --primary_color: #191919;
+  --primary_bg: #191919;
+  --primary_line: #414141;
+  --rgba_primary: 25, 25, 25;
+
+  /*
+    Primary Color Hover State
+  */
+  --primary_color_hover: #414141;
+  --primary_bg_hover: #414141;
+
+
+  /*
+    General Color Codes
+  */
+  --white_bg: #fff;
+  --white_color: #fff;
+  --rgba_white: 255, 255, 255;
+
+  --black_color: #03061a;
+  --rgba_black: 3, 6, 26;
+
+  --error_color: #e01234;
+  --error_line: #e01234;
+  --rgba_error: 224, 18, 52;
+
+  --success_line: #3fe483;
+  --rgba_success: 63, 228, 131;
+
+  --message_line: #0057FF;
+  --rgba_message: 0, 87, 255;
+
+  --line: #e5e7eb;
+  --rgba_line: 229, 231, 235;
+}
+
+body.login {
+  background: var(--theme_bg) !important;
+  background-color: var(--theme_bg) !important;
+  color: var(--black_color);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  letter-spacing: -0.02em;
+  display: block;
+  padding: 0 16px;
+  overflow-x: hidden;
+}
+
+body.login a {
+  text-decoration: none !important;
+}
+
+body.login *:focus {
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+}
+
+body.login #wlcms-login-wrapper {
+  width: 100%;
+  padding: 192px 0 138px 0;
+}
+
+body.login #login {
+  width: 100%;
+  max-width: 384px;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body.login #login .privacy-policy-page-link {
+  margin: 0;
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+body.login #login .privacy-policy-page-link a {
+  color: rgba(var(--rgba_black), 0.4);
+}
+
+body.login #login .privacy-policy-page-link a:hover {
+  color: rgba(var(--rgba_black), 0.6);
+}
+
+body.login #login #login_error strong {
+  color: var(--error_color);
+  font-weight: 600;
+}
+
+body.login #login form.shake {
+  animation: none;
+  transform: none;
+}
+
+body.login #login form.shake input[type="text"],
+body.login #login form.shake input[type="password"] {
+  border-color: var(--error_line);
+}
+
+body.login #login form.shake input[type="text"]:focus,
+body.login #login form.shake input[type="password"]:focus {
+  border-color: rgba(var(--rgba_error), 0.6);
+  box-shadow: 0 0 0 4px rgba(var(--rgba_error), 0.2);
+}
+
+body.login #login form.shake input[type="text"]:focus:hover,
+body.login #login form.shake input[type="password"]:focus:hover {
+  background: none;
+  border-color: rgba(var(--rgba_error), 0.6);
+}
+
+body.login #login form.shake .forgetmenot input {
+  border-color: var(--error_line);
+}
+
+body.login #login form.shake .forgetmenot label {
+  color: var(--black_color);
+}
+
+body.login #login h1 {
+  position: fixed;
+  z-index: 9;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100% !important;
+  max-width: 100%;
+  height: 96px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--line);
+  background-color: var(--white_bg);
+}
+
+body.login #login h1 a {
+  display: flex;
+  width: 100% !important;
+  max-width: 256px;
+  height: 36px;
+  margin: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+body.login #login h1 a:focus {
+  color: var(--white_color);
+}
+
+body.login #login form {
+  overflow: unset;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+}
+
+body.login #login form label {
+  display: block;
+  padding-bottom: 8px;
+  margin: 0;
+  color: var(--black_color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+body.login #login form input[type="text"],
+body.login #login form input[type="password"] {
+  height: 42px;
+  min-height: auto;
+  padding: 0 12px;
+  border: 1px solid;
+  margin: 0;
+  margin-bottom: 24px;
+  background: none;
+  border-color: var(--line);
+  color: var(--black_color);
+  border-radius: 0;
+  box-shadow: none;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+body.login #login form input[type="text"]:hover,
+body.login #login form input[type="password"]:hover {
+  background: rgba(var(--rgba_black), 0.024);
+  border-color: transparent;
+}
+
+body.login #login form input[type="text"]:focus,
+body.login #login form input[type="password"]:focus {
+  border-color: rgba(var(--rgba_primary), 0.6);
+  box-shadow: 0 0 0 4px rgba(var(--rgba_primary), 0.2);
+}
+
+body.login #login form input[type="text"]:focus:hover,
+body.login #login form input[type="password"]:focus:hover {
+  background: none;
+  border-color: rgba(var(--rgba_primary), 0.6);
+}
+
+body.login #login form input.password-input {
+  padding-right: 42px;
+}
+
+body.login #login form .button.wp-hide-pw {
+  display: inline-flex;
+  width: auto;
+  min-width: auto;
+  height: 42px;
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border: none;
+  border-radius: 0;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: baseline;
+}
+
+body.login #login form .button.wp-hide-pw:focus {
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+}
+
+body.login #login form .button.wp-hide-pw .dashicons {
+  top: 0;
+  width: 18px;
+  height: 18px;
+  color: rgba(var(--rgba_black), 0.12);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+body.login #login form .forgetmenot {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  float: none;
+}
+
+body.login #login form .forgetmenot input {
+  display: flex;
+  width: 16px;
+  min-width: auto;
+  height: 16px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: none;
+  border-color: rgba(var(--rgba_primary), 0.16);
+  border-radius: 0;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: none;
+}
+
+body.login #login form .forgetmenot input::before {
+  display: none;
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  background: var(--primary_bg);
+  content: "";
+  float: none;
+}
+
+body.login #login form .forgetmenot:hover label {
+  color: var(--black_color);
+}
+
+body.login #login form .forgetmenot:hover input {
+  border-color: var(--primary_line);
+}
+
+body.login #login form .forgetmenot input:checked {
+  border-color: var(--primary_line);
+}
+
+body.login #login form .forgetmenot input:checked::before {
+  display: block;
+}
+
+body.login #login form .forgetmenot input:checked + label {
+  color: var(--black_color);
+}
+
+body.login #login #login_error,
+body.login #login .message,
+body.login #login .success {
+  padding: 0;
+  padding-left: 16px;
+  border: none;
+  border-left: 3px solid;
+  margin-bottom: 48px;
+  background: none;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+body.login #login #login_error a,
+body.login #login .message a,
+body.login #login .success a {
+  color: var(--primary_color);
+}
+
+body.login #login #login_error a:hover,
+body.login #login .message a:hover,
+body.login #login .success a:hover {
+  color: var(--primary_color_hover);
+}
+
+body.login #login #login_error {
+  border-color: var(--error_line);
+}
+
+body.login #login .message {
+  border-color: var(--message_line);
+}
+
+body.login #login .success {
+  border-color: var(--success_line);
+}
+
+body.login #login form .forgetmenot label {
+  width: 100%;
+  padding-bottom: 0;
+  padding-left: 12px;
+  color: rgba(var(--rgba_black), 0.6);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+body.login #login form .submit input[type="submit"] {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 24px;
+  border: none;
+  background: var(--primary_bg) !important;
+  background-color: var(--primary_bg) !important;
+  border-radius: 0;
+  color: var(--white_color);
+  float: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: background 0.3s ease;
+}
+
+body.login #login form .submit input[type="submit"]:hover {
+  background: var(--primary_bg_hover) !important;
+  background-color: var(--primary_bg_hover) !important;
+}
+
+body.login #login form .submit input[type="submit"]:focus {
+  box-shadow: 0 0 0 4px rgba(var(--rgba_primary), 0.2);
+}
+
+body.login #login p#nav {
+  padding: 0;
+  margin: 24px 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+body.login #login p#nav a {
+  color: rgba(var(--rgba_black), 0.6);
+}
+
+body.login #login p#nav a:hover {
+  color: var(--black_color);
+}
+
+body.login #login p#backtoblog {
+  padding: 0;
+  margin: 0;
+  margin-top: 48px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+
+body.login #login p#backtoblog a {
+  padding: 8px 16px;
+  background: rgba(var(--rgba_black), 0.024);
+  border-radius: 50px;
+  color: rgba(var(--rgba_black), 0.4);
+}
+
+body.login #login p#backtoblog a:hover {
+  color: rgba(var(--rgba_black), 0.6);
+}
+
+body.login .language-switcher {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 42px;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  background: var(--white_bg);
+  transform: translateX(-50%);
+}
+
+body.login .language-switcher #language-switcher {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+body.login .language-switcher label {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-right: 6px;
+  margin: 0;
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: normal;
+}
+
+body.login .language-switcher label span {
+  font-size: 18px;
+}
+
+body.login .language-switcher select {
+  height: 100%;
+  padding-right: 12px;
+  border: none;
+  margin-right: 0 !important;
+  color: var(--black_color);
+  background: none;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+body.login .language-switcher select:focus,
+body.login .language-switcher select:hover {
+  box-shadow: none;
+  color: var(--primary_color_hover);
+}
+
+body.login .language-switcher .button {
+  display: flex;
+  height: 100%;
+  min-height: auto;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+  border-radius: 0;
+  color: var(--primary_color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+body.login .language-switcher .button:focus,
+body.login .language-switcher .button:hover {
+  color: var(--primary_color_hover);
+}
+
+body.login .language-switcher .button:focus {
+  background: none;
+  box-shadow: none;
+  outline: none;
+}
