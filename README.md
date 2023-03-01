@@ -1,4 +1,4 @@
-## WordPress Customized Login Page
+## WordPress customized login page
 
 > I have redesigned the WordPress login screen.
 
